@@ -40,6 +40,7 @@ namespace ml_lme
             m_handRayLeft.isInteractionRay = true;
             m_handRayLeft.triggerGazeEvents = false;
             m_handRayLeft.holderRoot = m_handRayLeft.gameObject;
+            m_handRayLeft.attachmentDistance = 0f;
 
             m_handRayRight = LeapTracking.GetInstance().GetRightHand().gameObject.AddComponent<ControllerRay>();
             m_handRayRight.hand = false;
@@ -47,6 +48,7 @@ namespace ml_lme
             m_handRayRight.isInteractionRay = true;
             m_handRayRight.triggerGazeEvents = false;
             m_handRayRight.holderRoot = m_handRayRight.gameObject;
+            m_handRayRight.attachmentDistance = 0f;
 
             m_lineLeft = m_handRayLeft.gameObject.AddComponent<LineRenderer>();
             m_lineLeft.endWidth = 1f;
